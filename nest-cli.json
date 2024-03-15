@@ -52,6 +52,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/metrics/tsconfig.app.json"
       }
+    },
+    "scrapper": {
+      "type": "application",
+      "root": "apps/scrapper",
+      "entryFile": "main",
+      "sourceRoot": "apps/scrapper/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/scrapper/tsconfig.app.json"
+      }
     }
   }
 }
