@@ -11,4 +11,11 @@ export class OrdersController {
     return this.ordersService.createOrder(request);
   }
 
+  @Get()
+  async findOrders(){
+    return this.ordersService.getOrders()
+  }
+  
+  
+
 }
