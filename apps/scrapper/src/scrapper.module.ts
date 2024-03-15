@@ -1,10 +1,13 @@
 import { Module } from '@nestjs/common';
-import { ScrapperController } from './scrapper.controller';
-import { ScrapperService } from './scrapper.service';
+import { AmazonModule } from './amazon/amazon.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [],
-  controllers: [ScrapperController],
-  providers: [ScrapperService],
+  imports: [
+      ConfigModule.forRoot({isGlobal:true}),
+    AmazonModule
+  ],
+  controllers: [],
+  providers: [],
 })
 export class ScrapperModule {}

@@ -34,6 +34,7 @@
     "class-validator": "^0.14.1",
     "joi": "^17.12.2",
     "mongoose": "^8.2.1",
+    "puppeteer-core": "^22.4.1",
     "reflect-metadata": "^0.2.1",
     "rimraf": "^3.0.2",
     "rxjs": "^7.8.1",
