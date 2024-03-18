@@ -23,7 +23,7 @@ export class OrdersService {
           request
         }),
         )
-      
+      //commented to avoid error
     //  await session.commitTransaction(),
      return order
     } catch (error) {
