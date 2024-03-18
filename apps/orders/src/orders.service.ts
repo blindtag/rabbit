@@ -24,14 +24,13 @@ export class OrdersService {
         }),
         )
       
-      await session.commitTransaction(),
-     // return order;
-     return
+    //  await session.commitTransaction(),
+     return order
     } catch (error) {
       session.abortTransaction();
       throw error;
     }
-  }
+  };
   
   async getOrders(){
     return this.ordersRepository.find({})
